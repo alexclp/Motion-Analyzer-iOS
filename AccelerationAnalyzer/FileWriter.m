@@ -10,9 +10,15 @@
 
 @implementation FileWriter
 
-+ (void)writeDataToFile
++ (void)writeDataToFile:(NSMutableArray *)data
 {
+	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"data.plist"];
 	
+	BOOL status = [data writeToFile:filePath atomically:YES];
+	
+	NSLog(@"saved = %hhd", status);
 }
 
 @end

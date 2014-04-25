@@ -1,15 +1,13 @@
 //
-//  FileWriter.h
+//  GatheredData.m
 //  AccelerationAnalyzer
 //
 //  Created by Alexandru Clapa on 25.04.2014.
 //  Copyright (c) 2014 Alexandru Clapa. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "GatheredData.h"
 
-@interface FileWriter : NSObject
-
-+ (void)writeDataToFile:(NSMutableArray *)data;
+@implementation GatheredData
 
 @end

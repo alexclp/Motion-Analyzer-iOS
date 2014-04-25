@@ -11,4 +11,8 @@
 
 @interface ViewController : UIViewController
 
+- (IBAction)startAnalyzing:(id)sender;
+- (IBAction)stopAnalyzing:(id)sender;
+- (IBAction)sendData:(id)sender;
+
 @end

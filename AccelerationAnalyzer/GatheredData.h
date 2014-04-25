@@ -1,5 +1,5 @@
 //
-//  FileWriter.h
+//  GatheredData.h
 //  AccelerationAnalyzer
 //
 //  Created by Alexandru Clapa on 25.04.2014.
@@ -8,8 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface FileWriter : NSObject
+@interface GatheredData : NSObject
 
-+ (void)writeDataToFile:(NSMutableArray *)data;
+@property (strong, nonatomic) NSString *x;
+@property (strong, nonatomic) NSString *y;
+@property (strong, nonatomic) NSString *z;
 
 @end

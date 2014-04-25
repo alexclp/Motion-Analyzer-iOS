@@ -20,6 +20,9 @@
                     <state key="normal" title="Start to analyze">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="startAnalyzing:" destination="-1" eventType="touchUpInside" id="ea0-kE-f4c"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKf-Mv-Bod">
                     <rect key="frame" x="90" y="286" width="140" height="30"/>
@@ -27,6 +30,9 @@
                     <state key="normal" title="Send result by email">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="sendData:" destination="-1" eventType="touchUpInside" id="LWG-6Q-gZ8"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q3V-8T-B8n">
                     <rect key="frame" x="107" y="194" width="107" height="30"/>
@@ -34,6 +40,9 @@
                     <state key="normal" title="Stop to analyze">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
+                    <connections>
+                        <action selector="stopAnalyzing:" destination="-1" eventType="touchUpInside" id="FoU-Ln-FSl"/>
+                    </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

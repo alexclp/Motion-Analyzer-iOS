@@ -7,8 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+	CMMotionManager *motionManager;
+}
+
+@property (readonly, nonatomic) CMMotionManager *motionManger;
 
 @property (strong, nonatomic) UIWindow *window;
 

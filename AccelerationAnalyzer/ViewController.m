@@ -29,6 +29,19 @@
     // Do any additional setup after loading the view from its nib.
 }
 
+- (CMMotionManager *)motionManager
+{
+	CMMotionManager *motionManager = nil;
+	
+	id appDelegate = [[UIApplication sharedApplication] delegate];
+	
+	if ([appDelegate respondsToSelector:@selector(motionManager)]) {
+		motionManager = [appDelegate motionManager];
+	}
+	
+	return motionManager;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

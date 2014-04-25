@@ -22,6 +22,7 @@
 		0F2D0A37190A743D006F16DB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D0A35190A743D006F16DB /* ViewController.m */; };
 		0F2D0A38190A743D006F16DB /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F2D0A36190A743D006F16DB /* ViewController.xib */; };
 		0F2D0A3A190A74C6006F16DB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2D0A39190A74C6006F16DB /* CoreMotion.framework */; };
+		0F2D0A3D190A753F006F16DB /* FileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D0A3C190A753F006F16DB /* FileWriter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		0F2D0A35190A743D006F16DB /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0F2D0A36190A743D006F16DB /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		0F2D0A39190A74C6006F16DB /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		0F2D0A3B190A753F006F16DB /* FileWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileWriter.h; sourceTree = "<group>"; };
+		0F2D0A3C190A753F006F16DB /* FileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWriter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +121,8 @@
 			children = (
 				0F2D0A14190A742A006F16DB /* AppDelegate.h */,
 				0F2D0A15190A742A006F16DB /* AppDelegate.m */,
+				0F2D0A3B190A753F006F16DB /* FileWriter.h */,
+				0F2D0A3C190A753F006F16DB /* FileWriter.m */,
 				0F2D0A34190A743D006F16DB /* ViewController.h */,
 				0F2D0A35190A743D006F16DB /* ViewController.m */,
 				0F2D0A36190A743D006F16DB /* ViewController.xib */,
@@ -252,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2D0A3D190A753F006F16DB /* FileWriter.m in Sources */,
 				0F2D0A37190A743D006F16DB /* ViewController.m in Sources */,
 				0F2D0A16190A742A006F16DB /* AppDelegate.m in Sources */,
 				0F2D0A12190A742A006F16DB /* main.m in Sources */,

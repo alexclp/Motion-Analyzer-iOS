@@ -7,8 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <MessageUI/MessageUI.h>
 
-@interface FileWriter : NSObject
+@interface FileWriter : NSObject <MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 
 + (void)writeDataToFile:(NSMutableArray *)data;
 

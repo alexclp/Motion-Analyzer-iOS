@@ -24,6 +24,7 @@
 		0F2D0A3A190A74C6006F16DB /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2D0A39190A74C6006F16DB /* CoreMotion.framework */; };
 		0F2D0A3D190A753F006F16DB /* FileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D0A3C190A753F006F16DB /* FileWriter.m */; };
 		0F2D0A40190A781A006F16DB /* GatheredData.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F2D0A3F190A781A006F16DB /* GatheredData.m */; };
+		0F2D0A42190A7B69006F16DB /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F2D0A41190A7B69006F16DB /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		0F2D0A3C190A753F006F16DB /* FileWriter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileWriter.m; sourceTree = "<group>"; };
 		0F2D0A3E190A781A006F16DB /* GatheredData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GatheredData.h; sourceTree = "<group>"; };
 		0F2D0A3F190A781A006F16DB /* GatheredData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GatheredData.m; sourceTree = "<group>"; };
+		0F2D0A41190A7B69006F16DB /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F2D0A42190A7B69006F16DB /* MessageUI.framework in Frameworks */,
 				0F2D0A3A190A74C6006F16DB /* CoreMotion.framework in Frameworks */,
 				0F2D0A08190A742A006F16DB /* CoreGraphics.framework in Frameworks */,
 				0F2D0A0A190A742A006F16DB /* UIKit.framework in Frameworks */,
@@ -110,6 +113,7 @@
 		0F2D0A04190A742A006F16DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0F2D0A41190A7B69006F16DB /* MessageUI.framework */,
 				0F2D0A39190A74C6006F16DB /* CoreMotion.framework */,
 				0F2D0A05190A742A006F16DB /* Foundation.framework */,
 				0F2D0A07190A742A006F16DB /* CoreGraphics.framework */,

@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreMotion/CoreMotion.h>
+#import <MessageUI/MessageUI.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate>
 
 - (IBAction)startAnalyzing:(id)sender;
 - (IBAction)stopAnalyzing:(id)sender;

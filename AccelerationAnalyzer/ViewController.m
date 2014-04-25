@@ -39,7 +39,8 @@
 
 - (IBAction)sendData:(id)sender
 {
-	
+	[FileWriter writeDataToFile:self.totalData];
+	[self showEmail];
 }
 
 - (void)viewDidLoad
@@ -84,6 +85,62 @@
 	 }
 	 ];
 	
+}
+
+- (void)showEmail
+{
+	
+    NSString *emailTitle = @"Great Photo and Doc";
+    NSString *messageBody = @"Hey, check this out!";
+    NSArray *toRecipents = [NSArray arrayWithObject:@"alexandru.clapa@gmail.com"];
+    
+    MFMailComposeViewController *mc = [[MFMailComposeViewController alloc] init];
+    mc.mailComposeDelegate = self;
+    [mc setSubject:emailTitle];
+    [mc setMessageBody:messageBody isHTML:NO];
+    [mc setToRecipients:toRecipents];
+    
+    // Get the resource path and read the file using NSData
+    NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+	NSString *documentsDirectory = [paths objectAtIndex:0];
+	NSString *filePath = [documentsDirectory stringByAppendingPathComponent:@"data.plist"];
+	
+    
+    // Determine the MIME type
+	NSString *filename = @"data";
+	NSString *mimeType = @"text/plist";
+	NSData *fileData = [NSData dataWithContentsOfFile:filePath];
+    
+    // Add attachment
+    [mc addAttachmentData:fileData mimeType:mimeType fileName:filename];
+    
+    // Present mail view controller on screen
+    [self presentViewController:mc animated:YES completion:NULL];
+    
+}
+
+- (void) mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error
+{
+    switch (result)
+    {
+        case MFMailComposeResultCancelled:
+            NSLog(@"Mail cancelled");
+            break;
+        case MFMailComposeResultSaved:
+            NSLog(@"Mail saved");
+            break;
+        case MFMailComposeResultSent:
+            NSLog(@"Mail sent");
+            break;
+        case MFMailComposeResultFailed:
+            NSLog(@"Mail sent failure: %@", [error localizedDescription]);
+            break;
+        default:
+            break;
+    }
+    
+    // Close the Mail Interface
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 - (void)didReceiveMemoryWarning

@@ -18,7 +18,7 @@
 	
 	BOOL status = [data writeToFile:filePath atomically:YES];
 	
-	NSLog(@"saved = %hhd", status);
+	NSLog(@"saved = %d", status);
 }
 
 @end

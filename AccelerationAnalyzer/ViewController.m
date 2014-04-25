@@ -66,24 +66,24 @@
 
 - (void)startMotionDetect
 {
-	
 	[self.motionManager startAccelerometerUpdatesToQueue:[[NSOperationQueue alloc] init]
                                              withHandler:^(CMAccelerometerData *data, NSError *error) {
 		 dispatch_async(dispatch_get_main_queue(), ^{
+			 
 			 NSString *x = [NSString stringWithFormat:@"%f", data.acceleration.x];
 			 NSString *y = [NSString stringWithFormat:@"%f", data.acceleration.y];
 			 NSString *z = [NSString stringWithFormat:@"%f", data.acceleration.z];
 			 
 			 NSMutableDictionary *current = [[NSMutableDictionary alloc] init];
+			 
 			 [current setObject:x forKey:@"x"];
 			 [current setObject:y forKey:@"y"];
 			 [current setObject:z forKey:@"z"];
 			 
 			 [self.totalData addObject:current];
 
-						});
-	 }
-	 ];
+			});
+	 }];
 	
 }
 
